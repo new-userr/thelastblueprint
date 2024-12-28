@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Read Now!! ->The Last Blueprint</title>
+    </head>
+    <body>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">The Last Blueprint</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close">
+                        <ion-icon name="close-outline" class="nav__close-icon" id="nav-close"></ion-icon>
+                    </div>
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Other Books</a></li>
+                        
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main bd-grid">
+            <div class="home">
+                 
+
+                <h1 class="home__title">
+                    <a href="https://drive.google.com/uc?id=1IGCpIRARS4ZTZbmT757qNGt7r6ZmVL3X" class="home__title-link">Read<br>Now!<br></a>
+                </h1>
+
+
+
+
+
+
+                <div class="home__img">
+
+                </div>
+
+                <div class="home__social">
+                    <a href="https://x.com/dharpale_p?t=BQhH5Sn_c06KUOH-17pSLw&s=09" class="home__social-link">Twitter</a>
+                    <a href="https://www.instagram.com/imprasad_4777?igsh=dGRyeDJmZXRkbjE=" class="home__social-link">Instagram</a>
+                    <a href="https://www.linkedin.com/in/prasad-dharpale-a84b11313" class="home__social-link">LinkedIn</a>
+                </div>
+
+                <h2 class="home__subtitle">
+                    <a href="#about" class="home__subtitle-link">Prasad<br>Sanjay<br>Dharpale</a>
+                </h2>
+
+                <a href="https://wa.me/919763214777" class="home__button">Contact <ion-icon name="arrow-forward-outline" class="home__button-icon"></ion-icon></a>
+            </div>
+        </main>
+
+        <section id="about" class="about bd-grid">
+            <div class="about__container">
+                <div class="about__content">
+                    <h2 class="about__title">About the Author</h2>
+                    <p class="about__text">
+                        Prasad Sanjay Dharpale is an emerging writer known for captivating storytelling and engaging narratives. 
+                        With "The Last Blueprint," he weaves an intricate tale that keeps readers hooked from start to finish. 
+                        Beyond writing, Prasad is passionate about inspiring creativity and sharing knowledge through his work.
+                    </p>
+                    <a href="" class="about__button">Learn More</a>
+                </div>
+
+                <div class="about__img">
+                    <img src="assets/img/author.jpg" alt="Author Image">
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN -->
+        <script src="assets/js/main.js"></script>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- THREE JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js"
+         integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+
+        <!-- HOVER-EFFECT JS -->
+        <script src="assets/js/hover-effect.umd.js"></script>
+        
+         <!-- ICONOS -->
+        <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    
+        <script>
+            new hoverEffect({
+                parent: document.querySelector('.home__img'),
+                intensity: 0.3,
+                image1: 'assets/img/img1.jpg',
+                image2: 'assets/img/img2.jpg',
+                displacementImage: 'assets/img/diss.png',
+                imagesRatio: 450 / 300
+            })
+
+            /* NAV, TITLE Y IMG y*/
+            gsap.from('.nav', {opacity: 0, duration: 1, delay:1, y: -30})
+            gsap.from('.home__title', {opacity: 0, duration: 1.2, delay:1.2, y: -30})
+            gsap.from('.home__img', {opacity: 0, duration: 1.3, delay:1.3, y: -50})
+
+            /*SOCIAL, SUBTITLE Y BUTTON*/
+            gsap.from('.home__social', {opacity: 0, duration: 1, delay:1.5, y: 50})
+            gsap.from('.home__subtitle', {opacity: 0, duration: 1, delay: 1.8, y: 50})
+            gsap.from('.home__button', {opacity: 0, duration: 1, delay:2, y: 50})
+        </script>
+    </body>
+</html>
