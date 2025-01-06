@@ -5,8 +5,8 @@
 /*Colores*/
 :root {
   --first-color: #1d1d20;
-  --second-color: #F2BF25;
-  --text-color: #f8e300;
+  --second-color: #FFF;
+  --text-color: #FFF;
   --white-color: #FFF;
   --logo-color: #ff2121;
 }
@@ -47,6 +47,8 @@
 body {
   margin: 3rem 0 0 0;
   font-family: var(--body-font);
+  background: repeating-radial-gradient(circle, #ff2121, #1d1d20 20%);
+
   background-color: var(--first-color);
   color: var(--text-color);
   font-weight: 700;
@@ -276,7 +278,7 @@ img {
 
 .about__button {
   display: inline-block;
-  background-color: var(--logo-color);
+  background-color: var(--first-color);
   color: var(--white-color);
   padding: 1rem 2rem;
   text-decoration: none;
@@ -308,6 +310,13 @@ img {
 .about__img img:hover {
   transform: scale(1.02);
 }
+
+.home__img {
+  border: 5px solid #03030354; /* Adjust the size and color of the border as needed */
+  border-radius: 2px; /* Optional: for rounded corners */
+  overflow: hidden; /* Ensures the image stays within the border if rounded corners are applied */
+}
+
 
 /* Tablet and smaller desktop screens */
 @media screen and (max-width: 992px) {
@@ -397,14 +406,14 @@ html {
 .home__title-link, 
 .home__subtitle-link {
     text-decoration: none;
-    color: #f8e300;
+    color: #ffffff;
 }
 
 .home__title-link:hover, 
 .home__subtitle-link:hover {
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-color: #f80000;
+    text-decoration-color: #040202;
 }
 
 
