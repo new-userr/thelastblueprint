@@ -329,6 +329,34 @@ img {
   transform: scale(1.02);
 }
 
+
+footer {
+  background-color: #1D1D20;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.footer__item {
+  margin: 0 15px;
+}
+.footer__link {
+  color: white;
+  text-decoration: none;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+
 .home__img {
   border: 5px solid #03030354; /* Adjust the size and color of the border as needed */
   border-radius: 2px; /* Optional: for rounded corners */
